@@ -9,9 +9,7 @@ export default function PetsList(props) {
     <div className='list-pets-friends container'>
       {/* 2- Loop over the data generating a Pet element as you go */}
       {/* What props does the Pet component expect? */}
-      {pets.map(petObj => {
-        return <p>{petObj.name}</p>
-      })}
+      {pets.map(petObj => <Pet key={petObj.id} pet={petObj} />)}
     </div>
   )
 }
