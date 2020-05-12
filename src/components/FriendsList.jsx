@@ -18,7 +18,7 @@ export default function FriendsList(props) {
       {
         // javascript expression
         friends.map(friendObj => {
-          return <Friend key={friend.id} friend={friendObj} />
+          return <Friend key={friendObj.id} friend={friendObj} />
         })
       }
 
