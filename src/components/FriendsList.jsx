@@ -18,7 +18,7 @@ export default function FriendsList(props) {
       {
         // javascript expression
         friends.map(friend => {
-          debugger
+          return <Friend />
         })
       }
 
