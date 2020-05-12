@@ -17,7 +17,7 @@ export default function Friend(props) {
           <p>Age: {friend.age}</p>
 
           {/* 1- Display something better in the Married area */}
-          <p>Married: {friend.married}</p>
+          <p>Married: {friend.married ? 'Yes' : 'No'}</p>
           <div>Likes:
             <ul>
               {/* 2- Loop over the friend's likes and generate <li/> elements as you go */}
