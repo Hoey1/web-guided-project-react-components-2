@@ -27,7 +27,7 @@ export default function App() {
       <Search />
       {/* 6- Render the FriendsList component */}
       {/* What prop/props does FriendsList need? */}
-      <FriendsList friends={friends} />
+      <FriendsList friends={friends} emphasis={true} />
     </div>
   )
 }
