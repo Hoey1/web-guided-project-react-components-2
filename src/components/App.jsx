@@ -19,6 +19,16 @@ export default function App() {
 
   // STRETCH - Make a helper function that returns
   // a filtered array of friends data (filtering by search term)
+  const filterFriends = friends => {
+    return friends.filter(friendObj => {
+      if (!searchTerm) {
+        return friendObj
+      }
+      if (friendObj.name.toLowerCase().includes(searchTerm.toLowerCase())) {
+        return friendObj
+      }
+    })
+  }
 
   return (
     <div className='app-friends container'>
@@ -27,7 +37,7 @@ export default function App() {
       <Search updateSearchTerm={setSearchTerm} />
       {/* 6- Render the FriendsList component */}
       {/* What prop/props does FriendsList need? */}
-      <FriendsList friends={friends} emphasis={true} />
+      <FriendsList friends={filterFriends(friends)} emphasis={true} />
     </div>
   )
 }
