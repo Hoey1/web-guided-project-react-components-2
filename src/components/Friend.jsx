@@ -21,6 +21,7 @@ export default function Friend(props) {
           <div>Likes:
             <ul>
               {/* 2- Loop over the friend's likes and generate <li/> elements as you go */}
+              {friend.likes.map((like, index) => <li key={index}>{like}</li>)}
             </ul>
           </div>
         </div>
