@@ -12,3 +12,5 @@ being used by another application.
 - Navigate into the project folder.
 - Run `npm i` to download the project's dependencies listed in the `package.json`.
 - Run `npm start` to compile the project and spin up a dev server on `http://localhost:1234`.
+
+- For Review Only after final fork
